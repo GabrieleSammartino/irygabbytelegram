@@ -17,6 +17,12 @@ bot.onText(/\/ire/, function (msg,match) {
     bot.sendMessage(fromId,ire);
 
 });
+bot.onText(/\/gabby/, function (msg,match) {
+    var gabby = "TI AMO GABBY, DA IR PERÒ SEI FROCIO (SEI STRONZA MA ILY) <3 ";
+    var fromId = msg.from.id;
+    bot.sendMessage(fromId,gabby);
+
+});
 bot.onText(/\/copia (.+)/, function (msg, match) {
     var fromId = msg.from.id;
     var resp = match[1];
